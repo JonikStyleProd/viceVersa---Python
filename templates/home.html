@@ -27,6 +27,8 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
+            padding-top: 10px;
+            font-size: 20px;
         }
         h1 {
             text-align: center;
@@ -83,7 +85,7 @@
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="{% url 'reverse' %}">
         <h1>Vice Versa!</h1>
         <p>All reversed here!</p>
         <textarea class="area" name="usertext" rows="25" cols="60"></textarea>
